@@ -18,6 +18,7 @@ with open("Input/Names/invited_names.txt", "r") as send:
 for name in send_list:
     remove_space_name = name.strip()
     fixed_letter = letters.replace("[name]", remove_space_name)
+    fixed_letter = fixed_letter.replace("Angela", "Hong")
 
     file_name = f"Output/ReadyToSend/To_{remove_space_name}.txt"
 
